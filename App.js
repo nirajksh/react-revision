@@ -1,23 +1,24 @@
-import React from "react"
+import {createElement} from "react"
 import ReactDOM from "react-dom/client"
-const head = React.createElement("h1",{
-    id:"title",
+const head = createElement(
+   "h2",{id:"titile"},"namaste React"
+)
 
+
+
+const Head3=()=>{
+    return(
+        <div>{head}</div>
+    )
 }
-,"heading 1")
 
-const head2 = React.createElement("h2",{
-    id:"title",
-},"heading 2")
-
-const container = React.createElement("div",{
-    id:"container",
-
-},"container")
-
-const container2 = React.createElement("div",{
-    id:"title"
-},[head,container,head2])
+const HeaderComponent =()=>{
+    return(
+        <div>
+            {Head3()}
+        </div>
+    )
+}
 
 const root = ReactDOM.createRoot(document.getElementById("root"))
-root.render(container2)
+root.render(<HeaderComponent/>)
