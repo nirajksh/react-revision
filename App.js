@@ -2,6 +2,15 @@ import {createElement} from "react"
 import ReactDOM from "react-dom/client"
 const head = createElement(
    "h2",{id:"titile"},"namaste React"
+
+)
+
+const head2=createElement(
+    "h2",{
+        title:"head2",
+        id:"heading",
+        hello:"world"
+    },"i have created heading two"
 )
 
 
@@ -15,6 +24,7 @@ const Head3=()=>{
 const HeaderComponent =()=>{
     return(
         <div>
+            {head2}
             {Head3()}
         </div>
     )
