@@ -1,0 +1,21 @@
+.logo > img {
+width: 5rem;   
+}
+.container{
+    margin: 6px;
+}
+.navItems > ul{
+    gap: 15px;
+    display: flex;
+    list-style: none;
+    margin-left: 300px;
+    font-weight: bold;
+    font-size: large;
+
+}
+.logo{
+    display: flex;
+    border: 1px solid black; 
+
+      
+}
