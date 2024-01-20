@@ -1,5 +1,4 @@
 import React from "react";
-import Header from "./Header"
 
 const Body  =()=>{
 
@@ -8,8 +7,8 @@ const Body  =()=>{
 
     
     return (<div className="container">
+        <h2>hello world!!</h2>
 
-    <Header/>
 
 
     </div>

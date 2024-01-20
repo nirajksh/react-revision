@@ -2,6 +2,8 @@ import React from "react"
 import ReactDOM from "react-dom/client"
 import Body from "./components/Body";
 import "./index.css"
+import Header from "./components/Header";
+import Footer from "./components/Footer"
 
 // const head = createElement(
 //    "h2",{id:"titile"},"namaste React"
@@ -32,6 +34,14 @@ import "./index.css"
 //         </div>
 //     )
 // }
+const AppLayout=()=>{
+    return(<>
+    <Header/>
+    <Body/>
+    <Footer/>
+    </>)
+}
+
 
 const root = ReactDOM.createRoot(document.getElementById("root"))
-root.render(<Body/>)
+root.render(<AppLayout/>)
