@@ -20,4 +20,17 @@
   display: flex;
 }
 
+.card {
+  background-color: #d3d3d3;
+  border: 2px solid #000;
+  width: 200px;
+  margin: 2px;
+  padding: 2px;
+}
+
+.card > img {
+  border-radius: 2px;
+  width: 100%;
+}
+
 /*# sourceMappingURL=index.61d3354a.css.map */
