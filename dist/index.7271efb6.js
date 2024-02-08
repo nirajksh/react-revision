@@ -27353,7 +27353,7 @@ var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _commonJs = require("../common.js");
 //https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/e33e1d3ba7d6b2bb0d45e1001b731fcf
-const Body = ({ cloudinaryImageId })=>{
+const Body = ()=>{
     const restaurantData = [
         {
             info: {
@@ -27858,59 +27858,86 @@ const Body = ({ cloudinaryImageId })=>{
         }
     ];
     console.log(restaurantData);
-    console.log(info.name[1]);
+    const RestaurantCard = ({ name, locality, cloudinaryImageId, avgRating })=>{
+        console.log(name);
+        return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            className: "container",
+            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "card",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                        className: "res_img",
+                        alt: "img",
+                        src: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/" + cloudinaryImageId
+                    }, void 0, false, {
+                        fileName: "src/components/Body.js",
+                        lineNumber: 488,
+                        columnNumber: 11
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                children: [
+                                    name,
+                                    " "
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/components/Body.js",
+                                lineNumber: 490,
+                                columnNumber: 11
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                children: locality
+                            }, void 0, false, {
+                                fileName: "src/components/Body.js",
+                                lineNumber: 491,
+                                columnNumber: 11
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                children: [
+                                    "Rating",
+                                    avgRating
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/components/Body.js",
+                                lineNumber: 492,
+                                columnNumber: 11
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/components/Body.js",
+                        lineNumber: 489,
+                        columnNumber: 10
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/components/Body.js",
+                lineNumber: 487,
+                columnNumber: 6
+            }, undefined)
+        }, void 0, false, {
+            fileName: "src/components/Body.js",
+            lineNumber: 486,
+            columnNumber: 10
+        }, undefined);
+    };
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "container",
-        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-            className: "card",
-            children: [
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                    className: "res_img",
-                    alt: "img",
-                    src: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/e33e1d3ba7d6b2bb0d45e1001b731fcf"
-                }, void 0, false, {
+        children: restaurantData && restaurantData.map((res)=>{
+            return /*#__PURE__*/ (0, _react.createElement)(RestaurantCard, {
+                ...res.info,
+                key: res.info.id,
+                __source: {
                     fileName: "src/components/Body.js",
-                    lineNumber: 491,
-                    columnNumber: 11
-                }, undefined),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
-                    children: [
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                            children: " "
-                        }, void 0, false, {
-                            fileName: "src/components/Body.js",
-                            lineNumber: 493,
-                            columnNumber: 11
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                            children: "Distance"
-                        }, void 0, false, {
-                            fileName: "src/components/Body.js",
-                            lineNumber: 494,
-                            columnNumber: 11
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                            children: "Star"
-                        }, void 0, false, {
-                            fileName: "src/components/Body.js",
-                            lineNumber: 495,
-                            columnNumber: 11
-                        }, undefined)
-                    ]
-                }, void 0, true, {
-                    fileName: "src/components/Body.js",
-                    lineNumber: 492,
-                    columnNumber: 10
-                }, undefined)
-            ]
-        }, void 0, true, {
-            fileName: "src/components/Body.js",
-            lineNumber: 490,
-            columnNumber: 10
-        }, undefined)
+                    lineNumber: 505,
+                    columnNumber: 16
+                },
+                __self: undefined
+            });
+        })
     }, void 0, false, {
         fileName: "src/components/Body.js",
-        lineNumber: 488,
+        lineNumber: 502,
         columnNumber: 5
     }, undefined);
 };

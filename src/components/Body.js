@@ -4,8 +4,9 @@ import {IMG_CDN_URL} from "../common.js"
 
 
 //https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/e33e1d3ba7d6b2bb0d45e1001b731fcf
-const Body = ({cloudinaryImageId}) => {
-  const restaurantData = [
+const Body = () => {
+  const restaurantData = 
+  [
     {
       info: {
         id: "251514",
@@ -476,28 +477,35 @@ const Body = ({cloudinaryImageId}) => {
         link: "https://www.swiggy.com/restaurants/kfc-vasundara-matro-mall-kidwaipuri-patna-81234",
         type: "WEBLINK",
       },
-    },
-  ];
-
-  console.log(restaurantData);
-  console.log(info.name[1])
-
-
-
-  return (
-    <div className="container">
-      {
-         <div className="card">
-          <img className="res_img" alt="img" src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/e33e1d3ba7d6b2bb0d45e1001b731fcf"/>
+    }
+  ]
+ console.log(restaurantData)
+ 
+const RestaurantCard=({name,locality,cloudinaryImageId,avgRating})=>{
+  console.log(name)
+  return(<div className="container">
+     <div className="card">
+          <img className="res_img" alt="img" src={"https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/"+cloudinaryImageId}/>
          <ul>
-          <li>{} </li>
-          <li>Distance</li>
-          <li>Star</li>
+          <li>{name} </li>
+          <li>{locality}</li>
+          <li>Rating{avgRating}</li>
 
          </ul>
 
          </div>
-      }
+  </div>)
+}
+
+
+  return (
+    <div className="container">
+     {
+      restaurantData && restaurantData.map((res)=>{
+        return <RestaurantCard {...res.info} key={res.info.id} />
+      })
+
+     }
     </div>
   );
 };

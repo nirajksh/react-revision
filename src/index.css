@@ -3,6 +3,8 @@ width: 5rem;
 }
 .container{
     margin: 6px;
+    display: flex;
+    flex-wrap: wrap;
 }
 .navItems > ul{
     gap: 15px;
@@ -25,9 +27,13 @@ width: 5rem;
     border: 2px solid black;
     padding: 2px;
     margin: 2px;
+   
 
 }
 .card>img{
     width: 100%;
     border-radius: 2px;
+}
+.card>ul{
+    list-style-type: square;
 }

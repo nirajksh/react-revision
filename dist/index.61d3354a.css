@@ -3,7 +3,9 @@
 }
 
 .container {
+  flex-wrap: wrap;
   margin: 6px;
+  display: flex;
 }
 
 .navItems > ul {
@@ -31,6 +33,10 @@
 .card > img {
   border-radius: 2px;
   width: 100%;
+}
+
+.card > ul {
+  list-style-type: square;
 }
 
 /*# sourceMappingURL=index.61d3354a.css.map */
