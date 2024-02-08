@@ -27351,585 +27351,20 @@ parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
-var _commonJs = require("../common.js");
+var _restaurantCard = require("./RestaurantCard");
+var _restaurantCardDefault = parcelHelpers.interopDefault(_restaurantCard);
+var _constant = require("../constant");
 //https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/e33e1d3ba7d6b2bb0d45e1001b731fcf
 const Body = ()=>{
-    const restaurantData = [
-        {
-            info: {
-                id: "251514",
-                name: "Bikaner Sweets And Pastry Shop",
-                cloudinaryImageId: "xcjaxvxnuupuf9vo1ux2",
-                locality: "Boring Road",
-                areaName: "Sri Krishnapuri",
-                costForTwo: "\u20B9420 for two",
-                cuisines: [
-                    "Bakery",
-                    "Sweets"
-                ],
-                avgRating: 4.5,
-                veg: true,
-                parentId: "45906",
-                avgRatingString: "4.5",
-                totalRatingsString: "5K+",
-                sla: {
-                    deliveryTime: 23,
-                    lastMileTravel: 1.5,
-                    serviceability: "SERVICEABLE",
-                    slaString: "23 mins",
-                    lastMileTravelString: "1.5 km",
-                    iconType: "ICON_TYPE_EMPTY"
-                },
-                availability: {
-                    nextCloseTime: "2024-01-24 22:00:00",
-                    opened: true
-                },
-                badges: {
-                    imageBadges: [
-                        {
-                            imageId: "v1695133679/badges/Pure_Veg111.png",
-                            description: "pureveg"
-                        }
-                    ]
-                },
-                select: true,
-                isOpen: true,
-                aggregatedDiscountInfoV2: {},
-                type: "F",
-                badgesV2: {
-                    entityBadges: {
-                        imageBased: {
-                            badgeObject: [
-                                {
-                                    attributes: {
-                                        description: "pureveg",
-                                        imageId: "v1695133679/badges/Pure_Veg111.png"
-                                    }
-                                }
-                            ]
-                        },
-                        textBased: {},
-                        textExtendedBadges: {}
-                    }
-                },
-                differentiatedUi: {
-                    displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-                    differentiatedUiMediaDetails: {
-                        mediaType: "ADS_MEDIA_ENUM_IMAGE",
-                        lottie: {},
-                        video: {}
-                    }
-                },
-                reviewsSummary: {},
-                displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-                restaurantOfferPresentationInfo: {}
-            },
-            analytics: {},
-            cta: {
-                link: "https://www.swiggy.com/restaurants/bikaner-sweets-and-pastry-shop-boring-road-sri-krishnapuri-patna-251514",
-                type: "WEBLINK"
-            }
-        },
-        {
-            info: {
-                id: "381297",
-                name: "My Bakery World",
-                cloudinaryImageId: "g4rf2hu8zhacjj6cvtcr",
-                locality: "Mandiri Nala",
-                areaName: "Lodipur",
-                costForTwo: "\u20B9534 for two",
-                cuisines: [
-                    "Desserts"
-                ],
-                avgRating: 4.2,
-                veg: true,
-                parentId: "251260",
-                avgRatingString: "4.2",
-                totalRatingsString: "1K+",
-                sla: {
-                    deliveryTime: 34,
-                    lastMileTravel: 2.3,
-                    serviceability: "SERVICEABLE",
-                    slaString: "34 mins",
-                    lastMileTravelString: "2.3 km",
-                    iconType: "ICON_TYPE_EMPTY"
-                },
-                availability: {
-                    nextCloseTime: "2024-01-24 23:55:00",
-                    opened: true
-                },
-                badges: {},
-                isOpen: true,
-                type: "F",
-                badgesV2: {
-                    entityBadges: {
-                        imageBased: {},
-                        textBased: {},
-                        textExtendedBadges: {}
-                    }
-                },
-                aggregatedDiscountInfoV3: {
-                    header: "\u20B9120 OFF",
-                    subHeader: "ABOVE \u20B9199",
-                    discountTag: "FLAT DEAL"
-                },
-                differentiatedUi: {
-                    displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-                    differentiatedUiMediaDetails: {
-                        mediaType: "ADS_MEDIA_ENUM_IMAGE",
-                        lottie: {},
-                        video: {}
-                    }
-                },
-                reviewsSummary: {},
-                displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-                restaurantOfferPresentationInfo: {}
-            },
-            analytics: {},
-            cta: {
-                link: "https://www.swiggy.com/restaurants/my-bakery-world-mandiri-nala-lodipur-patna-381297",
-                type: "WEBLINK"
-            }
-        },
-        {
-            info: {
-                id: "324612",
-                name: "Benzoz Pizza",
-                cloudinaryImageId: "h00vciwuc7ctejcx24qc",
-                locality: "Boring Canal Road",
-                areaName: "Sri Krishnapuri",
-                costForTwo: "\u20B9200 for two",
-                cuisines: [
-                    "Italian"
-                ],
-                avgRating: 3.6,
-                parentId: "43487",
-                avgRatingString: "3.6",
-                totalRatingsString: "1K+",
-                sla: {
-                    deliveryTime: 36,
-                    lastMileTravel: 2,
-                    serviceability: "SERVICEABLE",
-                    slaString: "36 mins",
-                    lastMileTravelString: "2.0 km",
-                    iconType: "ICON_TYPE_EMPTY"
-                },
-                availability: {
-                    nextCloseTime: "2024-01-24 23:59:00",
-                    opened: true
-                },
-                badges: {},
-                isOpen: true,
-                type: "F",
-                badgesV2: {
-                    entityBadges: {
-                        imageBased: {},
-                        textBased: {},
-                        textExtendedBadges: {}
-                    }
-                },
-                aggregatedDiscountInfoV3: {
-                    header: "\u20B9150 OFF",
-                    subHeader: "ABOVE \u20B9349",
-                    discountTag: "FLAT DEAL"
-                },
-                differentiatedUi: {
-                    displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-                    differentiatedUiMediaDetails: {
-                        mediaType: "ADS_MEDIA_ENUM_IMAGE",
-                        lottie: {},
-                        video: {}
-                    }
-                },
-                reviewsSummary: {},
-                displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-                restaurantOfferPresentationInfo: {}
-            },
-            analytics: {},
-            cta: {
-                link: "https://www.swiggy.com/restaurants/benzoz-pizza-boring-canal-road-sri-krishnapuri-patna-324612",
-                type: "WEBLINK"
-            }
-        },
-        {
-            info: {
-                id: "230250",
-                name: "Pour Tous",
-                cloudinaryImageId: "lnjmdcml4anmh5hhdwv0",
-                locality: "Boring Road",
-                areaName: "Patliputra Colony",
-                costForTwo: "\u20B9250 for two",
-                cuisines: [
-                    "Biryani",
-                    "Chinese",
-                    "Kebabs"
-                ],
-                avgRating: 4.4,
-                parentId: "160184",
-                avgRatingString: "4.4",
-                totalRatingsString: "10K+",
-                sla: {
-                    deliveryTime: 32,
-                    lastMileTravel: 1.9,
-                    serviceability: "SERVICEABLE",
-                    slaString: "32 mins",
-                    lastMileTravelString: "1.9 km",
-                    iconType: "ICON_TYPE_EMPTY"
-                },
-                availability: {
-                    nextCloseTime: "2024-01-24 23:00:00",
-                    opened: true
-                },
-                badges: {},
-                isOpen: true,
-                type: "F",
-                badgesV2: {
-                    entityBadges: {
-                        imageBased: {},
-                        textBased: {},
-                        textExtendedBadges: {}
-                    }
-                },
-                aggregatedDiscountInfoV3: {
-                    header: "20% OFF",
-                    subHeader: "UPTO \u20B950"
-                },
-                differentiatedUi: {
-                    displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-                    differentiatedUiMediaDetails: {
-                        mediaType: "ADS_MEDIA_ENUM_IMAGE",
-                        lottie: {},
-                        video: {}
-                    }
-                },
-                reviewsSummary: {},
-                displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-                restaurantOfferPresentationInfo: {}
-            },
-            analytics: {},
-            cta: {
-                link: "https://www.swiggy.com/restaurants/pour-tous-boring-road-patliputra-colony-patna-230250",
-                type: "WEBLINK"
-            }
-        },
-        {
-            info: {
-                id: "89715",
-                name: "Dragon Flames Delivery",
-                cloudinaryImageId: "vju93xt1vvirqcrdquqy",
-                locality: "Boring Road",
-                areaName: "Sri Krishnapuri",
-                costForTwo: "\u20B9313 for two",
-                cuisines: [
-                    "Chinese"
-                ],
-                avgRating: 4.4,
-                parentId: "74654",
-                avgRatingString: "4.4",
-                totalRatingsString: "10K+",
-                sla: {
-                    deliveryTime: 27,
-                    lastMileTravel: 1.1,
-                    serviceability: "SERVICEABLE",
-                    slaString: "27 mins",
-                    lastMileTravelString: "1.1 km",
-                    iconType: "ICON_TYPE_EMPTY"
-                },
-                availability: {
-                    nextCloseTime: "2024-01-24 22:15:00",
-                    opened: true
-                },
-                badges: {},
-                isOpen: true,
-                aggregatedDiscountInfoV2: {},
-                type: "F",
-                badgesV2: {
-                    entityBadges: {
-                        imageBased: {},
-                        textBased: {},
-                        textExtendedBadges: {}
-                    }
-                },
-                differentiatedUi: {
-                    displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-                    differentiatedUiMediaDetails: {
-                        mediaType: "ADS_MEDIA_ENUM_IMAGE",
-                        lottie: {},
-                        video: {}
-                    }
-                },
-                reviewsSummary: {},
-                displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-                restaurantOfferPresentationInfo: {}
-            },
-            analytics: {},
-            cta: {
-                link: "https://www.swiggy.com/restaurants/dragon-flames-delivery-boring-road-sri-krishnapuri-patna-89715",
-                type: "WEBLINK"
-            }
-        },
-        {
-            info: {
-                id: "698241",
-                name: "Domino's Pizza",
-                cloudinaryImageId: "0e7bc46a0e74d28b0d88e1fad2830dbc",
-                locality: "Sheeraj Complex",
-                areaName: "Buddha Colony",
-                costForTwo: "\u20B9400 for two",
-                cuisines: [
-                    "Pizzas",
-                    "Italian",
-                    "Pastas",
-                    "Desserts"
-                ],
-                avgRating: 4.2,
-                parentId: "2456",
-                avgRatingString: "4.2",
-                totalRatingsString: "100+",
-                sla: {
-                    deliveryTime: 25,
-                    serviceability: "SERVICEABLE",
-                    slaString: "25 mins",
-                    iconType: "ICON_TYPE_EMPTY"
-                },
-                availability: {
-                    nextCloseTime: "2024-01-24 23:00:00",
-                    opened: true
-                },
-                badges: {},
-                isOpen: true,
-                type: "F",
-                badgesV2: {
-                    entityBadges: {
-                        imageBased: {},
-                        textBased: {},
-                        textExtendedBadges: {}
-                    }
-                },
-                aggregatedDiscountInfoV3: {
-                    header: "\u20B9150 OFF",
-                    subHeader: "ABOVE \u20B9299",
-                    discountTag: "FLAT DEAL"
-                },
-                differentiatedUi: {
-                    displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-                    differentiatedUiMediaDetails: {
-                        mediaType: "ADS_MEDIA_ENUM_IMAGE",
-                        lottie: {},
-                        video: {}
-                    }
-                },
-                reviewsSummary: {},
-                displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-                restaurantOfferPresentationInfo: {}
-            },
-            analytics: {},
-            cta: {
-                link: "https://www.swiggy.com/restaurants/dominos-pizza-sheeraj-complex-buddha-colony-patna-698241",
-                type: "WEBLINK"
-            }
-        },
-        {
-            info: {
-                id: "261077",
-                name: "La Pino'z Pizza",
-                cloudinaryImageId: "rxj2ustl2df033ajwlad",
-                locality: "patliputra",
-                areaName: "Patliputra Colony",
-                costForTwo: "\u20B9300 for two",
-                cuisines: [
-                    "Pizzas",
-                    "Pastas",
-                    "Italian",
-                    "Desserts",
-                    "Beverages"
-                ],
-                avgRating: 4,
-                parentId: "4961",
-                avgRatingString: "4.0",
-                totalRatingsString: "5K+",
-                sla: {
-                    deliveryTime: 29,
-                    lastMileTravel: 1.5,
-                    serviceability: "SERVICEABLE",
-                    slaString: "29 mins",
-                    lastMileTravelString: "1.5 km",
-                    iconType: "ICON_TYPE_EMPTY"
-                },
-                availability: {
-                    nextCloseTime: "2024-01-25 02:00:00",
-                    opened: true
-                },
-                badges: {},
-                isOpen: true,
-                type: "F",
-                badgesV2: {
-                    entityBadges: {
-                        imageBased: {},
-                        textBased: {},
-                        textExtendedBadges: {}
-                    }
-                },
-                aggregatedDiscountInfoV3: {
-                    header: "\u20B9125 OFF",
-                    subHeader: "ABOVE \u20B9549",
-                    discountTag: "FLAT DEAL"
-                },
-                differentiatedUi: {
-                    displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-                    differentiatedUiMediaDetails: {
-                        mediaType: "ADS_MEDIA_ENUM_IMAGE",
-                        lottie: {},
-                        video: {}
-                    }
-                },
-                reviewsSummary: {},
-                displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-                restaurantOfferPresentationInfo: {}
-            },
-            analytics: {},
-            cta: {
-                link: "https://www.swiggy.com/restaurants/la-pinoz-pizza-patliputra-patliputra-colony-patna-261077",
-                type: "WEBLINK"
-            }
-        },
-        {
-            info: {
-                id: "81234",
-                name: "KFC",
-                cloudinaryImageId: "f01666ac73626461d7455d9c24005cd4",
-                locality: "Vasundara Matro mall",
-                areaName: "Kidwaipuri",
-                costForTwo: "\u20B9450 for two",
-                cuisines: [
-                    "Burgers",
-                    "Biryani",
-                    "American",
-                    "Snacks",
-                    "Fast Food"
-                ],
-                avgRating: 4.3,
-                parentId: "547",
-                avgRatingString: "4.3",
-                totalRatingsString: "5K+",
-                sla: {
-                    deliveryTime: 25,
-                    lastMileTravel: 0.7,
-                    serviceability: "SERVICEABLE",
-                    slaString: "25 mins",
-                    lastMileTravelString: "0.7 km",
-                    iconType: "ICON_TYPE_EMPTY"
-                },
-                availability: {
-                    nextCloseTime: "2024-01-25 00:00:00",
-                    opened: true
-                },
-                badges: {},
-                isOpen: true,
-                type: "F",
-                badgesV2: {
-                    entityBadges: {
-                        imageBased: {},
-                        textBased: {},
-                        textExtendedBadges: {}
-                    }
-                },
-                aggregatedDiscountInfoV3: {
-                    header: "20% OFF",
-                    subHeader: "UPTO \u20B950"
-                },
-                differentiatedUi: {
-                    displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-                    differentiatedUiMediaDetails: {
-                        mediaType: "ADS_MEDIA_ENUM_IMAGE",
-                        lottie: {},
-                        video: {}
-                    }
-                },
-                reviewsSummary: {},
-                displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-                restaurantOfferPresentationInfo: {}
-            },
-            analytics: {},
-            cta: {
-                link: "https://www.swiggy.com/restaurants/kfc-vasundara-matro-mall-kidwaipuri-patna-81234",
-                type: "WEBLINK"
-            }
-        }
-    ];
-    console.log(restaurantData);
-    const RestaurantCard = ({ name, locality, cloudinaryImageId, avgRating })=>{
-        console.log(name);
-        return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-            className: "container",
-            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "card",
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                        className: "res_img",
-                        alt: "img",
-                        src: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/" + cloudinaryImageId
-                    }, void 0, false, {
-                        fileName: "src/components/Body.js",
-                        lineNumber: 488,
-                        columnNumber: 11
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
-                        children: [
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                                children: [
-                                    name,
-                                    " "
-                                ]
-                            }, void 0, true, {
-                                fileName: "src/components/Body.js",
-                                lineNumber: 490,
-                                columnNumber: 11
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                                children: locality
-                            }, void 0, false, {
-                                fileName: "src/components/Body.js",
-                                lineNumber: 491,
-                                columnNumber: 11
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                                children: [
-                                    "Rating",
-                                    avgRating
-                                ]
-                            }, void 0, true, {
-                                fileName: "src/components/Body.js",
-                                lineNumber: 492,
-                                columnNumber: 11
-                            }, undefined)
-                        ]
-                    }, void 0, true, {
-                        fileName: "src/components/Body.js",
-                        lineNumber: 489,
-                        columnNumber: 10
-                    }, undefined)
-                ]
-            }, void 0, true, {
-                fileName: "src/components/Body.js",
-                lineNumber: 487,
-                columnNumber: 6
-            }, undefined)
-        }, void 0, false, {
-            fileName: "src/components/Body.js",
-            lineNumber: 486,
-            columnNumber: 10
-        }, undefined);
-    };
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "container",
-        children: restaurantData && restaurantData.map((res)=>{
-            return /*#__PURE__*/ (0, _react.createElement)(RestaurantCard, {
+        children: (0, _constant.restaurantData) && (0, _constant.restaurantData).map((res)=>{
+            return /*#__PURE__*/ (0, _react.createElement)((0, _restaurantCardDefault.default), {
                 ...res.info,
                 key: res.info.id,
                 __source: {
                     fileName: "src/components/Body.js",
-                    lineNumber: 505,
+                    lineNumber: 19,
                     columnNumber: 16
                 },
                 __self: undefined
@@ -27937,7 +27372,7 @@ const Body = ()=>{
         })
     }, void 0, false, {
         fileName: "src/components/Body.js",
-        lineNumber: 502,
+        lineNumber: 16,
         columnNumber: 5
     }, undefined);
 };
@@ -27951,7 +27386,7 @@ $RefreshReg$(_c, "Body");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../common.js":"8wzUn"}],"gkKU3":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./RestaurantCard":"bMboU","../constant":"jVIFP"}],"gkKU3":[function(require,module,exports) {
 exports.interopDefault = function(a) {
     return a && a.__esModule ? a : {
         default: a
@@ -27981,13 +27416,601 @@ exports.export = function(dest, destName, get) {
     });
 };
 
-},{}],"8wzUn":[function(require,module,exports) {
+},{}],"bMboU":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$ffb1 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$ffb1.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _constantJs = require("../constant.js");
+const RestaurantCard = ({ name, locality, cloudinaryImageId, avgRating })=>{
+    console.log(name);
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "container",
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            className: "card",
+            children: [
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                    className: "res_img",
+                    alt: "img",
+                    src: (0, _constantJs.IMG_CDN_URL) + cloudinaryImageId
+                }, void 0, false, {
+                    fileName: "src/components/RestaurantCard.js",
+                    lineNumber: 7,
+                    columnNumber: 13
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                            children: [
+                                name,
+                                " "
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/components/RestaurantCard.js",
+                            lineNumber: 9,
+                            columnNumber: 13
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                            children: locality
+                        }, void 0, false, {
+                            fileName: "src/components/RestaurantCard.js",
+                            lineNumber: 10,
+                            columnNumber: 13
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                            children: [
+                                "Rating",
+                                avgRating
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/components/RestaurantCard.js",
+                            lineNumber: 11,
+                            columnNumber: 13
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/components/RestaurantCard.js",
+                    lineNumber: 8,
+                    columnNumber: 12
+                }, undefined)
+            ]
+        }, void 0, true, {
+            fileName: "src/components/RestaurantCard.js",
+            lineNumber: 6,
+            columnNumber: 8
+        }, undefined)
+    }, void 0, false, {
+        fileName: "src/components/RestaurantCard.js",
+        lineNumber: 5,
+        columnNumber: 12
+    }, undefined);
+};
+_c = RestaurantCard;
+exports.default = RestaurantCard;
+var _c;
+$RefreshReg$(_c, "RestaurantCard");
+
+  $parcel$ReactRefreshHelpers$ffb1.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","../constant.js":"jVIFP","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"jVIFP":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "Restaurant_API", ()=>Restaurant_API);
 parcelHelpers.export(exports, "IMG_CDN_URL", ()=>IMG_CDN_URL);
+parcelHelpers.export(exports, "restaurantData", ()=>restaurantData);
 const Restaurant_API = "https://www.swiggy.com/dapi/restaurants/list/v5?lat=25.6215229&lng=85.1213044&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING";
-const IMG_CDN_URL = "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/";
+const IMG_CDN_URL = "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/";
+const restaurantData = [
+    {
+        info: {
+            id: "251514",
+            name: "Bikaner Sweets And Pastry Shop",
+            cloudinaryImageId: "xcjaxvxnuupuf9vo1ux2",
+            locality: "Boring Road",
+            areaName: "Sri Krishnapuri",
+            costForTwo: "\u20B9420 for two",
+            cuisines: [
+                "Bakery",
+                "Sweets"
+            ],
+            avgRating: 4.5,
+            veg: true,
+            parentId: "45906",
+            avgRatingString: "4.5",
+            totalRatingsString: "5K+",
+            sla: {
+                deliveryTime: 23,
+                lastMileTravel: 1.5,
+                serviceability: "SERVICEABLE",
+                slaString: "23 mins",
+                lastMileTravelString: "1.5 km",
+                iconType: "ICON_TYPE_EMPTY"
+            },
+            availability: {
+                nextCloseTime: "2024-01-24 22:00:00",
+                opened: true
+            },
+            badges: {
+                imageBadges: [
+                    {
+                        imageId: "v1695133679/badges/Pure_Veg111.png",
+                        description: "pureveg"
+                    }
+                ]
+            },
+            select: true,
+            isOpen: true,
+            aggregatedDiscountInfoV2: {},
+            type: "F",
+            badgesV2: {
+                entityBadges: {
+                    imageBased: {
+                        badgeObject: [
+                            {
+                                attributes: {
+                                    description: "pureveg",
+                                    imageId: "v1695133679/badges/Pure_Veg111.png"
+                                }
+                            }
+                        ]
+                    },
+                    textBased: {},
+                    textExtendedBadges: {}
+                }
+            },
+            differentiatedUi: {
+                displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                differentiatedUiMediaDetails: {
+                    mediaType: "ADS_MEDIA_ENUM_IMAGE",
+                    lottie: {},
+                    video: {}
+                }
+            },
+            reviewsSummary: {},
+            displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+            restaurantOfferPresentationInfo: {}
+        },
+        analytics: {},
+        cta: {
+            link: "https://www.swiggy.com/restaurants/bikaner-sweets-and-pastry-shop-boring-road-sri-krishnapuri-patna-251514",
+            type: "WEBLINK"
+        }
+    },
+    {
+        info: {
+            id: "381297",
+            name: "My Bakery World",
+            cloudinaryImageId: "g4rf2hu8zhacjj6cvtcr",
+            locality: "Mandiri Nala",
+            areaName: "Lodipur",
+            costForTwo: "\u20B9534 for two",
+            cuisines: [
+                "Desserts"
+            ],
+            avgRating: 4.2,
+            veg: true,
+            parentId: "251260",
+            avgRatingString: "4.2",
+            totalRatingsString: "1K+",
+            sla: {
+                deliveryTime: 34,
+                lastMileTravel: 2.3,
+                serviceability: "SERVICEABLE",
+                slaString: "34 mins",
+                lastMileTravelString: "2.3 km",
+                iconType: "ICON_TYPE_EMPTY"
+            },
+            availability: {
+                nextCloseTime: "2024-01-24 23:55:00",
+                opened: true
+            },
+            badges: {},
+            isOpen: true,
+            type: "F",
+            badgesV2: {
+                entityBadges: {
+                    imageBased: {},
+                    textBased: {},
+                    textExtendedBadges: {}
+                }
+            },
+            aggregatedDiscountInfoV3: {
+                header: "\u20B9120 OFF",
+                subHeader: "ABOVE \u20B9199",
+                discountTag: "FLAT DEAL"
+            },
+            differentiatedUi: {
+                displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                differentiatedUiMediaDetails: {
+                    mediaType: "ADS_MEDIA_ENUM_IMAGE",
+                    lottie: {},
+                    video: {}
+                }
+            },
+            reviewsSummary: {},
+            displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+            restaurantOfferPresentationInfo: {}
+        },
+        analytics: {},
+        cta: {
+            link: "https://www.swiggy.com/restaurants/my-bakery-world-mandiri-nala-lodipur-patna-381297",
+            type: "WEBLINK"
+        }
+    },
+    {
+        info: {
+            id: "324612",
+            name: "Benzoz Pizza",
+            cloudinaryImageId: "h00vciwuc7ctejcx24qc",
+            locality: "Boring Canal Road",
+            areaName: "Sri Krishnapuri",
+            costForTwo: "\u20B9200 for two",
+            cuisines: [
+                "Italian"
+            ],
+            avgRating: 3.6,
+            parentId: "43487",
+            avgRatingString: "3.6",
+            totalRatingsString: "1K+",
+            sla: {
+                deliveryTime: 36,
+                lastMileTravel: 2,
+                serviceability: "SERVICEABLE",
+                slaString: "36 mins",
+                lastMileTravelString: "2.0 km",
+                iconType: "ICON_TYPE_EMPTY"
+            },
+            availability: {
+                nextCloseTime: "2024-01-24 23:59:00",
+                opened: true
+            },
+            badges: {},
+            isOpen: true,
+            type: "F",
+            badgesV2: {
+                entityBadges: {
+                    imageBased: {},
+                    textBased: {},
+                    textExtendedBadges: {}
+                }
+            },
+            aggregatedDiscountInfoV3: {
+                header: "\u20B9150 OFF",
+                subHeader: "ABOVE \u20B9349",
+                discountTag: "FLAT DEAL"
+            },
+            differentiatedUi: {
+                displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                differentiatedUiMediaDetails: {
+                    mediaType: "ADS_MEDIA_ENUM_IMAGE",
+                    lottie: {},
+                    video: {}
+                }
+            },
+            reviewsSummary: {},
+            displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+            restaurantOfferPresentationInfo: {}
+        },
+        analytics: {},
+        cta: {
+            link: "https://www.swiggy.com/restaurants/benzoz-pizza-boring-canal-road-sri-krishnapuri-patna-324612",
+            type: "WEBLINK"
+        }
+    },
+    {
+        info: {
+            id: "230250",
+            name: "Pour Tous",
+            cloudinaryImageId: "lnjmdcml4anmh5hhdwv0",
+            locality: "Boring Road",
+            areaName: "Patliputra Colony",
+            costForTwo: "\u20B9250 for two",
+            cuisines: [
+                "Biryani",
+                "Chinese",
+                "Kebabs"
+            ],
+            avgRating: 4.4,
+            parentId: "160184",
+            avgRatingString: "4.4",
+            totalRatingsString: "10K+",
+            sla: {
+                deliveryTime: 32,
+                lastMileTravel: 1.9,
+                serviceability: "SERVICEABLE",
+                slaString: "32 mins",
+                lastMileTravelString: "1.9 km",
+                iconType: "ICON_TYPE_EMPTY"
+            },
+            availability: {
+                nextCloseTime: "2024-01-24 23:00:00",
+                opened: true
+            },
+            badges: {},
+            isOpen: true,
+            type: "F",
+            badgesV2: {
+                entityBadges: {
+                    imageBased: {},
+                    textBased: {},
+                    textExtendedBadges: {}
+                }
+            },
+            aggregatedDiscountInfoV3: {
+                header: "20% OFF",
+                subHeader: "UPTO \u20B950"
+            },
+            differentiatedUi: {
+                displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                differentiatedUiMediaDetails: {
+                    mediaType: "ADS_MEDIA_ENUM_IMAGE",
+                    lottie: {},
+                    video: {}
+                }
+            },
+            reviewsSummary: {},
+            displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+            restaurantOfferPresentationInfo: {}
+        },
+        analytics: {},
+        cta: {
+            link: "https://www.swiggy.com/restaurants/pour-tous-boring-road-patliputra-colony-patna-230250",
+            type: "WEBLINK"
+        }
+    },
+    {
+        info: {
+            id: "89715",
+            name: "Dragon Flames Delivery",
+            cloudinaryImageId: "vju93xt1vvirqcrdquqy",
+            locality: "Boring Road",
+            areaName: "Sri Krishnapuri",
+            costForTwo: "\u20B9313 for two",
+            cuisines: [
+                "Chinese"
+            ],
+            avgRating: 4.4,
+            parentId: "74654",
+            avgRatingString: "4.4",
+            totalRatingsString: "10K+",
+            sla: {
+                deliveryTime: 27,
+                lastMileTravel: 1.1,
+                serviceability: "SERVICEABLE",
+                slaString: "27 mins",
+                lastMileTravelString: "1.1 km",
+                iconType: "ICON_TYPE_EMPTY"
+            },
+            availability: {
+                nextCloseTime: "2024-01-24 22:15:00",
+                opened: true
+            },
+            badges: {},
+            isOpen: true,
+            aggregatedDiscountInfoV2: {},
+            type: "F",
+            badgesV2: {
+                entityBadges: {
+                    imageBased: {},
+                    textBased: {},
+                    textExtendedBadges: {}
+                }
+            },
+            differentiatedUi: {
+                displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                differentiatedUiMediaDetails: {
+                    mediaType: "ADS_MEDIA_ENUM_IMAGE",
+                    lottie: {},
+                    video: {}
+                }
+            },
+            reviewsSummary: {},
+            displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+            restaurantOfferPresentationInfo: {}
+        },
+        analytics: {},
+        cta: {
+            link: "https://www.swiggy.com/restaurants/dragon-flames-delivery-boring-road-sri-krishnapuri-patna-89715",
+            type: "WEBLINK"
+        }
+    },
+    {
+        info: {
+            id: "698241",
+            name: "Domino's Pizza",
+            cloudinaryImageId: "0e7bc46a0e74d28b0d88e1fad2830dbc",
+            locality: "Sheeraj Complex",
+            areaName: "Buddha Colony",
+            costForTwo: "\u20B9400 for two",
+            cuisines: [
+                "Pizzas",
+                "Italian",
+                "Pastas",
+                "Desserts"
+            ],
+            avgRating: 4.2,
+            parentId: "2456",
+            avgRatingString: "4.2",
+            totalRatingsString: "100+",
+            sla: {
+                deliveryTime: 25,
+                serviceability: "SERVICEABLE",
+                slaString: "25 mins",
+                iconType: "ICON_TYPE_EMPTY"
+            },
+            availability: {
+                nextCloseTime: "2024-01-24 23:00:00",
+                opened: true
+            },
+            badges: {},
+            isOpen: true,
+            type: "F",
+            badgesV2: {
+                entityBadges: {
+                    imageBased: {},
+                    textBased: {},
+                    textExtendedBadges: {}
+                }
+            },
+            aggregatedDiscountInfoV3: {
+                header: "\u20B9150 OFF",
+                subHeader: "ABOVE \u20B9299",
+                discountTag: "FLAT DEAL"
+            },
+            differentiatedUi: {
+                displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                differentiatedUiMediaDetails: {
+                    mediaType: "ADS_MEDIA_ENUM_IMAGE",
+                    lottie: {},
+                    video: {}
+                }
+            },
+            reviewsSummary: {},
+            displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+            restaurantOfferPresentationInfo: {}
+        },
+        analytics: {},
+        cta: {
+            link: "https://www.swiggy.com/restaurants/dominos-pizza-sheeraj-complex-buddha-colony-patna-698241",
+            type: "WEBLINK"
+        }
+    },
+    {
+        info: {
+            id: "261077",
+            name: "La Pino'z Pizza",
+            cloudinaryImageId: "rxj2ustl2df033ajwlad",
+            locality: "patliputra",
+            areaName: "Patliputra Colony",
+            costForTwo: "\u20B9300 for two",
+            cuisines: [
+                "Pizzas",
+                "Pastas",
+                "Italian",
+                "Desserts",
+                "Beverages"
+            ],
+            avgRating: 4,
+            parentId: "4961",
+            avgRatingString: "4.0",
+            totalRatingsString: "5K+",
+            sla: {
+                deliveryTime: 29,
+                lastMileTravel: 1.5,
+                serviceability: "SERVICEABLE",
+                slaString: "29 mins",
+                lastMileTravelString: "1.5 km",
+                iconType: "ICON_TYPE_EMPTY"
+            },
+            availability: {
+                nextCloseTime: "2024-01-25 02:00:00",
+                opened: true
+            },
+            badges: {},
+            isOpen: true,
+            type: "F",
+            badgesV2: {
+                entityBadges: {
+                    imageBased: {},
+                    textBased: {},
+                    textExtendedBadges: {}
+                }
+            },
+            aggregatedDiscountInfoV3: {
+                header: "\u20B9125 OFF",
+                subHeader: "ABOVE \u20B9549",
+                discountTag: "FLAT DEAL"
+            },
+            differentiatedUi: {
+                displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                differentiatedUiMediaDetails: {
+                    mediaType: "ADS_MEDIA_ENUM_IMAGE",
+                    lottie: {},
+                    video: {}
+                }
+            },
+            reviewsSummary: {},
+            displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+            restaurantOfferPresentationInfo: {}
+        },
+        analytics: {},
+        cta: {
+            link: "https://www.swiggy.com/restaurants/la-pinoz-pizza-patliputra-patliputra-colony-patna-261077",
+            type: "WEBLINK"
+        }
+    },
+    {
+        info: {
+            id: "81234",
+            name: "KFC",
+            cloudinaryImageId: "f01666ac73626461d7455d9c24005cd4",
+            locality: "Vasundara Matro mall",
+            areaName: "Kidwaipuri",
+            costForTwo: "\u20B9450 for two",
+            cuisines: [
+                "Burgers",
+                "Biryani",
+                "American",
+                "Snacks",
+                "Fast Food"
+            ],
+            avgRating: 4.3,
+            parentId: "547",
+            avgRatingString: "4.3",
+            totalRatingsString: "5K+",
+            sla: {
+                deliveryTime: 25,
+                lastMileTravel: 0.7,
+                serviceability: "SERVICEABLE",
+                slaString: "25 mins",
+                lastMileTravelString: "0.7 km",
+                iconType: "ICON_TYPE_EMPTY"
+            },
+            availability: {
+                nextCloseTime: "2024-01-25 00:00:00",
+                opened: true
+            },
+            badges: {},
+            isOpen: true,
+            type: "F",
+            badgesV2: {
+                entityBadges: {
+                    imageBased: {},
+                    textBased: {},
+                    textExtendedBadges: {}
+                }
+            },
+            aggregatedDiscountInfoV3: {
+                header: "20% OFF",
+                subHeader: "UPTO \u20B950"
+            },
+            differentiatedUi: {
+                displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                differentiatedUiMediaDetails: {
+                    mediaType: "ADS_MEDIA_ENUM_IMAGE",
+                    lottie: {},
+                    video: {}
+                }
+            },
+            reviewsSummary: {},
+            displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+            restaurantOfferPresentationInfo: {}
+        },
+        analytics: {},
+        cta: {
+            link: "https://www.swiggy.com/restaurants/kfc-vasundara-matro-mall-kidwaipuri-patna-81234",
+            type: "WEBLINK"
+        }
+    }
+];
 
 },{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"irmnC":[function() {},{}],"hsJbF":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$bfed = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
