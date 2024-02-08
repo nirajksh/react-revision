@@ -27354,7 +27354,6 @@ var _reactDefault = parcelHelpers.interopDefault(_react);
 var _restaurantCard = require("./RestaurantCard");
 var _restaurantCardDefault = parcelHelpers.interopDefault(_restaurantCard);
 var _constant = require("../constant");
-//https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/e33e1d3ba7d6b2bb0d45e1001b731fcf
 const Body = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "container",
@@ -27364,15 +27363,15 @@ const Body = ()=>{
                 key: res.info.id,
                 __source: {
                     fileName: "src/components/Body.js",
-                    lineNumber: 19,
-                    columnNumber: 16
+                    lineNumber: 10,
+                    columnNumber: 18
                 },
                 __self: undefined
             });
         })
     }, void 0, false, {
         fileName: "src/components/Body.js",
-        lineNumber: 16,
+        lineNumber: 7,
         columnNumber: 5
     }, undefined);
 };
@@ -27428,7 +27427,7 @@ parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _constantJs = require("../constant.js");
 const RestaurantCard = ({ name, locality, cloudinaryImageId, avgRating })=>{
-    console.log(name);
+    //    console.log(name)
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "container",
         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {

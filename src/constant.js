@@ -1,8 +1,10 @@
-export const Restaurant_API="https://www.swiggy.com/dapi/restaurants/list/v5?lat=25.6215229&lng=85.1213044&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING"
-export const IMG_CDN_URL ="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/";
+export const Restaurant_API =
+  "https://www.swiggy.com/dapi/restaurants/list/v5?lat=25.6215229&lng=85.1213044&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING";
+export const IMG_CDN_URL =
+  "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/";
+//https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/e33e1d3ba7d6b2bb0d45e1001b731fcf
 
- export const restaurantData = 
-[
+export const restaurantData = [
   {
     info: {
       id: "251514",
@@ -473,5 +475,5 @@ export const IMG_CDN_URL ="https://media-assets.swiggy.com/swiggy/image/upload/f
       link: "https://www.swiggy.com/restaurants/kfc-vasundara-matro-mall-kidwaipuri-patna-81234",
       type: "WEBLINK",
     },
-  }
-]
+  },
+];
