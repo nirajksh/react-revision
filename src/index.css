@@ -37,3 +37,6 @@ width: 5rem;
 .card>ul{
     list-style-type: square;
 }
+.search{
+    margin: 3px;
+}

@@ -27355,25 +27355,54 @@ var _restaurantCard = require("./RestaurantCard");
 var _restaurantCardDefault = parcelHelpers.interopDefault(_restaurantCard);
 var _constant = require("../constant");
 const Body = ()=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "container",
-        children: (0, _constant.restaurantData) && (0, _constant.restaurantData).map((res)=>{
-            return /*#__PURE__*/ (0, _react.createElement)((0, _restaurantCardDefault.default), {
-                ...res.info,
-                key: res.info.id,
-                __source: {
-                    fileName: "src/components/Body.js",
-                    lineNumber: 10,
-                    columnNumber: 18
-                },
-                __self: undefined
-            });
-        })
-    }, void 0, false, {
-        fileName: "src/components/Body.js",
-        lineNumber: 7,
-        columnNumber: 5
-    }, undefined);
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "search",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                        type: "text",
+                        placeholder: "Search Restaurant"
+                    }, void 0, false, {
+                        fileName: "src/components/Body.js",
+                        lineNumber: 9,
+                        columnNumber: 7
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                        type: "button",
+                        children: "Search"
+                    }, void 0, false, {
+                        fileName: "src/components/Body.js",
+                        lineNumber: 10,
+                        columnNumber: 7
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/components/Body.js",
+                lineNumber: 8,
+                columnNumber: 5
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "container",
+                children: (0, _constant.restaurantData) && (0, _constant.restaurantData).map((res)=>{
+                    return /*#__PURE__*/ (0, _react.createElement)((0, _restaurantCardDefault.default), {
+                        ...res.info,
+                        key: res.info.id,
+                        __source: {
+                            fileName: "src/components/Body.js",
+                            lineNumber: 15,
+                            columnNumber: 18
+                        },
+                        __self: undefined
+                    });
+                })
+            }, void 0, false, {
+                fileName: "src/components/Body.js",
+                lineNumber: 12,
+                columnNumber: 5
+            }, undefined)
+        ]
+    }, void 0, true);
 };
 _c = Body;
 exports.default = Body;
