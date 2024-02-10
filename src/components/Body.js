@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import RestaurantCard from "./RestaurantCard";
 import Shimmer from "./Shimmer";
+import { Link } from "react-router-dom";
 
 
 function filterData(searchText,restaurantList){
@@ -16,6 +17,8 @@ const Body = () => {
   const [filterRestaurant, setFilterRestaurant] = useState([])
   const [searchText, setSearchText] = useState("")
 
+  
+
   useEffect(() => {
     getRestaurants();
   }, []);
@@ -26,16 +29,17 @@ const Body = () => {
     );
     const data = await res.json();
     //console.log(data?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants );
-    setRestaurantList(
-      data?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants
-    );
+
+    setRestaurantList(data?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
     setFilterRestaurant(data?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants)
   }
- // console.log(data);
+  console.log(restaurantList)
+  
+
 
   //if(!restaurantList) return null
-if(filterRestaurant?.length===0)
-return <h2>No Match restaurants</h2>
+// if(filterRestaurant?.length===0)
+// return <h2>No Match restaurants</h2>
 
   return restaurantList?.length === 0 ? (
     <Shimmer />
@@ -58,7 +62,10 @@ return <h2>No Match restaurants</h2>
       <div className="container">
         {filterRestaurant &&
           filterRestaurant.map((res) => {
-            return <RestaurantCard {...res.info} key={res.info.id} />;
+            return(
+            
+           <Link to={"/restaurant/"+res.info.id}key={res.info.id}><RestaurantCard {...res.info}  /></Link> 
+            )
           })}
       </div>
     </>

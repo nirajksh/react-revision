@@ -4,6 +4,11 @@ import Body from "./components/Body";
 import "./index.css"
 import Header from "./components/Header";
 import Footer from "./components/Footer"
+import Error from "./components/Error"
+import About from "./components/About"
+import Contact from "./components/Contact";
+import { createBrowserRouter,Outlet,RouterProvider } from "react-router-dom";
+import RestaurantMenu from "./components/RestaurantMenu";
 
 // const head = createElement(
 //    "h2",{id:"titile"},"namaste React"
@@ -34,14 +39,39 @@ import Footer from "./components/Footer"
 //         </div>
 //     )
 // }
+
 const AppLayout=()=>{
     return(<>
     <Header/>
-    <Body/>
+    <Outlet/>
     <Footer/>
     </>)
 }
 
+const router = createBrowserRouter([
+    {
+        path:"/",
+        element:<AppLayout/>,
+        errorElement:<Error/>,
+        children:[{
+            path:"/about",
+            element:<About/>,
+        },{
+            path:"./contact",
+            element:<Contact/>,
+
+        },{
+            path:"/",
+            element:<Body/>,
+
+        },
+        {
+            path: "/restaurant/:resId",
+            element: <RestaurantMenu/>,
+        }
+    ],
+    },
+])
 
 const root = ReactDOM.createRoot(document.getElementById("root"))
-root.render(<AppLayout/>)
+root.render(<RouterProvider router={router}/>)

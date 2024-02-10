@@ -43,3 +43,15 @@ width: 5rem;
 button{
     margin-left: 20px;
 }
+.shimmer{
+   
+    height: 200px;
+    width: 200px;
+    margin: 10px;
+    background:lightgrey;
+}
+.shimmer-card{
+    display: flex;
+    flex-wrap: wrap;
+    
+}

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 const logo = "https://files.yappe.in/place/full/the-food-villa-5873411.webp";
 
@@ -11,11 +12,11 @@ const Header = () => {
 
       <div className="navItems">
         <ul>
-          <li>Home</li>
-          <li>About</li>
+          <Link to="/"><li>Home</li></Link>
+          
+          <Link to="/about"><li>About</li></Link>
           <li>Cart</li>
-          <li>Offers</li>
-        </ul>
+          <Link to="/contact"><li>Contact</li></Link>        </ul>
       </div>
       {button ? (
         <button onClick={() => setButton(false)}>logout</button>
