@@ -2964,6 +2964,8 @@ var _contactDefault = parcelHelpers.interopDefault(_contact);
 var _reactRouterDom = require("react-router-dom");
 var _restaurantMenu = require("./components/RestaurantMenu");
 var _restaurantMenuDefault = parcelHelpers.interopDefault(_restaurantMenu);
+var _profile = require("./components/Profile");
+var _profileDefault = parcelHelpers.interopDefault(_profile);
 // const head = createElement(
 //    "h2",{id:"titile"},"namaste React"
 // )
@@ -2993,17 +2995,17 @@ const AppLayout = ()=>{
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _headerDefault.default), {}, void 0, false, {
                 fileName: "src/App.js",
                 lineNumber: 45,
-                columnNumber: 5
+                columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Outlet), {}, void 0, false, {
                 fileName: "src/App.js",
                 lineNumber: 46,
-                columnNumber: 5
+                columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _footerDefault.default), {}, void 0, false, {
                 fileName: "src/App.js",
                 lineNumber: 47,
-                columnNumber: 5
+                columnNumber: 7
             }, undefined)
         ]
     }, void 0, true);
@@ -3014,45 +3016,55 @@ const router = (0, _reactRouterDom.createBrowserRouter)([
         path: "/",
         element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(AppLayout, {}, void 0, false, {
             fileName: "src/App.js",
-            lineNumber: 54,
-            columnNumber: 17
+            lineNumber: 55,
+            columnNumber: 14
         }, undefined),
         errorElement: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _errorDefault.default), {}, void 0, false, {
             fileName: "src/App.js",
-            lineNumber: 55,
-            columnNumber: 22
+            lineNumber: 56,
+            columnNumber: 19
         }, undefined),
         children: [
             {
                 path: "/about",
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _aboutDefault.default), {}, void 0, false, {
                     fileName: "src/App.js",
-                    lineNumber: 58,
-                    columnNumber: 21
-                }, undefined)
+                    lineNumber: 60,
+                    columnNumber: 18
+                }, undefined),
+                children: [
+                    {
+                        path: "profile",
+                        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _profileDefault.default), {}, void 0, false, {
+                            fileName: "src/App.js",
+                            lineNumber: 64,
+                            columnNumber: 22
+                        }, undefined)
+                    }
+                ]
             },
             {
                 path: "./contact",
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _contactDefault.default), {}, void 0, false, {
                     fileName: "src/App.js",
-                    lineNumber: 61,
-                    columnNumber: 21
+                    lineNumber: 70,
+                    columnNumber: 18
                 }, undefined)
             },
             {
                 path: "/",
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _bodyDefault.default), {}, void 0, false, {
                     fileName: "src/App.js",
-                    lineNumber: 65,
-                    columnNumber: 21
+                    lineNumber: 74,
+                    columnNumber: 18
                 }, undefined)
             },
             {
                 path: "/restaurant/:resId",
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _restaurantMenuDefault.default), {}, void 0, false, {
                     fileName: "src/App.js",
-                    lineNumber: 70,
-                    columnNumber: 22
+                    lineNumber: 78,
+                    columnNumber: 18
                 }, undefined)
             }
         ]
@@ -3063,7 +3075,7 @@ root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.RouterP
     router: router
 }, void 0, false, {
     fileName: "src/App.js",
-    lineNumber: 77,
+    lineNumber: 85,
     columnNumber: 13
 }, undefined));
 var _c;
@@ -3074,7 +3086,7 @@ $RefreshReg$(_c, "AppLayout");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom/client":"lOjBx","./components/Body":"8yaV8","./index.css":"irmnC","./components/Header":"hsJbF","./components/Footer":"8pPOA","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","./components/Error":"kvula","./components/About":"9R1Eu","./components/Contact":"cgAOG","react-router-dom":"9xmpe","./components/RestaurantMenu":"8PuJ6"}],"km3Ru":[function(require,module,exports) {
+},{"@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom/client":"lOjBx","./components/Body":"8yaV8","./index.css":"irmnC","./components/Header":"hsJbF","./components/Footer":"8pPOA","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","./components/Error":"kvula","./components/About":"9R1Eu","./components/Contact":"cgAOG","react-router-dom":"9xmpe","./components/RestaurantMenu":"8PuJ6","./components/Profile":"h0rtF"}],"km3Ru":[function(require,module,exports) {
 "use strict";
 var Refresh = require("7422ead32dcc1e6b");
 function debounce(func, delay) {
@@ -27442,7 +27454,7 @@ const Body = ()=>{
     // return <h2>No Match restaurants</h2>
     return restaurantList?.length === 0 ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _shimmerDefault.default), {}, void 0, false, {
         fileName: "src/components/Body.js",
-        lineNumber: 45,
+        lineNumber: 43,
         columnNumber: 5
     }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
         children: [
@@ -27456,7 +27468,7 @@ const Body = ()=>{
                         onChange: (e)=>setSearchText(e.target.value)
                     }, void 0, false, {
                         fileName: "src/components/Body.js",
-                        lineNumber: 49,
+                        lineNumber: 47,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -27467,13 +27479,13 @@ const Body = ()=>{
                         children: "Search"
                     }, void 0, false, {
                         fileName: "src/components/Body.js",
-                        lineNumber: 54,
+                        lineNumber: 52,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/components/Body.js",
-                lineNumber: 48,
+                lineNumber: 46,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -27485,18 +27497,18 @@ const Body = ()=>{
                             ...res.info
                         }, void 0, false, {
                             fileName: "src/components/Body.js",
-                            lineNumber: 67,
+                            lineNumber: 65,
                             columnNumber: 67
                         }, undefined)
                     }, res.info.id, false, {
                         fileName: "src/components/Body.js",
-                        lineNumber: 67,
+                        lineNumber: 65,
                         columnNumber: 12
                     }, undefined);
                 })
             }, void 0, false, {
                 fileName: "src/components/Body.js",
-                lineNumber: 62,
+                lineNumber: 60,
                 columnNumber: 7
             }, undefined)
         ]
@@ -34907,18 +34919,39 @@ parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
+var _profile = require("./Profile");
+var _profileDefault = parcelHelpers.interopDefault(_profile);
+var _reactRouterDom = require("react-router-dom");
+var _profileClass = require("./ProfileClass");
+var _profileClassDefault = parcelHelpers.interopDefault(_profileClass);
 const About = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-            children: "THis is about page"
-        }, void 0, false, {
-            fileName: "src/components/About.js",
-            lineNumber: 6,
-            columnNumber: 13
-        }, undefined)
-    }, void 0, false, {
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                children: "THis is about page"
+            }, void 0, false, {
+                fileName: "src/components/About.js",
+                lineNumber: 9,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _profileDefault.default), {
+                name: "niraj"
+            }, void 0, false, {
+                fileName: "src/components/About.js",
+                lineNumber: 10,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _profileClassDefault.default), {
+                name: "niraj Singh"
+            }, void 0, false, {
+                fileName: "src/components/About.js",
+                lineNumber: 11,
+                columnNumber: 13
+            }, undefined)
+        ]
+    }, void 0, true, {
         fileName: "src/components/About.js",
-        lineNumber: 5,
+        lineNumber: 8,
         columnNumber: 9
     }, undefined);
 };
@@ -34928,6 +34961,158 @@ var _c;
 $RefreshReg$(_c, "About");
 
   $parcel$ReactRefreshHelpers$5b98.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./Profile":"h0rtF","react-router-dom":"9xmpe","./ProfileClass":"aeEz8"}],"h0rtF":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$b52a = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$b52a.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _s = $RefreshSig$();
+const Profile = (props)=>{
+    _s();
+    const [count, setCount] = (0, _react.useState)(0);
+    const [count2, setCount2] = (0, _react.useState)(0);
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                children: [
+                    "Profile class:",
+                    props.name
+                ]
+            }, void 0, true, {
+                fileName: "src/components/Profile.js",
+                lineNumber: 9,
+                columnNumber: 5
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                children: [
+                    "count:",
+                    count
+                ]
+            }, void 0, true, {
+                fileName: "src/components/Profile.js",
+                lineNumber: 10,
+                columnNumber: 5
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
+                children: [
+                    "count2:",
+                    count2
+                ]
+            }, void 0, true, {
+                fileName: "src/components/Profile.js",
+                lineNumber: 11,
+                columnNumber: 5
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                onClick: ()=>setCount2(1),
+                children: "setCount2"
+            }, void 0, false, {
+                fileName: "src/components/Profile.js",
+                lineNumber: 12,
+                columnNumber: 5
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/components/Profile.js",
+        lineNumber: 8,
+        columnNumber: 12
+    }, undefined);
+};
+_s(Profile, "14Z1liDJ7pdjOKdsXgraX265WGw=");
+_c = Profile;
+exports.default = Profile;
+var _c;
+$RefreshReg$(_c, "Profile");
+
+  $parcel$ReactRefreshHelpers$b52a.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"aeEz8":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$1beb = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$1beb.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+class Profile extends (0, _react.Component) {
+    constructor(){
+        super();
+        this.state = {
+            count: 0,
+            count2: 0
+        };
+    }
+    render() {
+        const { count, count2 } = this.state;
+        return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+            children: [
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                    children: [
+                        "classComponrnts:",
+                        this.props.name
+                    ]
+                }, void 0, true, {
+                    fileName: "src/components/ProfileClass.js",
+                    lineNumber: 18,
+                    columnNumber: 13
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                    children: [
+                        "count:",
+                        count
+                    ]
+                }, void 0, true, {
+                    fileName: "src/components/ProfileClass.js",
+                    lineNumber: 19,
+                    columnNumber: 13
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
+                    children: [
+                        "count2:",
+                        count2
+                    ]
+                }, void 0, true, {
+                    fileName: "src/components/ProfileClass.js",
+                    lineNumber: 20,
+                    columnNumber: 13
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                    onClick: ()=>{
+                        this.setState({
+                            count2: 1
+                        });
+                    },
+                    children: "setCount2"
+                }, void 0, false, {
+                    fileName: "src/components/ProfileClass.js",
+                    lineNumber: 22,
+                    columnNumber: 13
+                }, this)
+            ]
+        }, void 0, true);
+    }
+}
+exports.default = Profile;
+
+  $parcel$ReactRefreshHelpers$1beb.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
