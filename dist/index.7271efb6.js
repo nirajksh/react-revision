@@ -34924,41 +34924,57 @@ var _profileDefault = parcelHelpers.interopDefault(_profile);
 var _reactRouterDom = require("react-router-dom");
 var _profileClass = require("./ProfileClass");
 var _profileClassDefault = parcelHelpers.interopDefault(_profileClass);
-const About = ()=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-                children: "THis is about page"
-            }, void 0, false, {
-                fileName: "src/components/About.js",
-                lineNumber: 9,
-                columnNumber: 13
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _profileDefault.default), {
-                name: "niraj"
-            }, void 0, false, {
-                fileName: "src/components/About.js",
-                lineNumber: 10,
-                columnNumber: 13
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _profileClassDefault.default), {
-                name: "niraj Singh"
-            }, void 0, false, {
-                fileName: "src/components/About.js",
-                lineNumber: 11,
-                columnNumber: 13
-            }, undefined)
-        ]
-    }, void 0, true, {
-        fileName: "src/components/About.js",
-        lineNumber: 8,
-        columnNumber: 9
-    }, undefined);
-};
-_c = About;
+// const About = ()=>{
+//     return (
+//         <div>
+//             <h2>THis is about page</h2>
+//             <Profile name={"niraj"}/> 
+//             <ProfileClass name ={"niraj Singh"}/>
+//        </div>
+//     )
+// }
+class About extends (0, _react.Component) {
+    constructor(){
+        super();
+    // console.log("Parent - constructor")
+    }
+    // componentDidMount(){
+    //     console.log("parent- componentDidMount")
+    // }
+    render() {
+        //  console.log("parent-render")
+        return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            children: [
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                    children: "This is about Page "
+                }, void 0, false, {
+                    fileName: "src/components/About.js",
+                    lineNumber: 27,
+                    columnNumber: 21
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _profileDefault.default), {
+                    name: "niraj"
+                }, void 0, false, {
+                    fileName: "src/components/About.js",
+                    lineNumber: 28,
+                    columnNumber: 9
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _profileClassDefault.default), {
+                    name: "niraj kumar singh"
+                }, void 0, false, {
+                    fileName: "src/components/About.js",
+                    lineNumber: 29,
+                    columnNumber: 9
+                }, this)
+            ]
+        }, void 0, true, {
+            fileName: "src/components/About.js",
+            lineNumber: 27,
+            columnNumber: 16
+        }, this);
+    }
+}
 exports.default = About;
-var _c;
-$RefreshReg$(_c, "About");
 
   $parcel$ReactRefreshHelpers$5b98.postlude(module);
 } finally {
@@ -34982,6 +34998,16 @@ const Profile = (props)=>{
     _s();
     const [count, setCount] = (0, _react.useState)(0);
     const [count2, setCount2] = (0, _react.useState)(0);
+    // useEffect(()=>{
+    //     const timer =setInterval(() => {
+    //         console.log("set intervel calling")
+    //     }, 1000);
+    //     return ()=>{
+    //         clearInterval(timer)
+    //         console.log("useEffect return ")
+    //     }
+    // },[])
+    //console.log("render")
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
@@ -34991,7 +35017,7 @@ const Profile = (props)=>{
                 ]
             }, void 0, true, {
                 fileName: "src/components/Profile.js",
-                lineNumber: 9,
+                lineNumber: 30,
                 columnNumber: 5
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
@@ -35001,7 +35027,7 @@ const Profile = (props)=>{
                 ]
             }, void 0, true, {
                 fileName: "src/components/Profile.js",
-                lineNumber: 10,
+                lineNumber: 31,
                 columnNumber: 5
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
@@ -35011,7 +35037,7 @@ const Profile = (props)=>{
                 ]
             }, void 0, true, {
                 fileName: "src/components/Profile.js",
-                lineNumber: 11,
+                lineNumber: 32,
                 columnNumber: 5
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -35019,13 +35045,13 @@ const Profile = (props)=>{
                 children: "setCount2"
             }, void 0, false, {
                 fileName: "src/components/Profile.js",
-                lineNumber: 12,
+                lineNumber: 33,
                 columnNumber: 5
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/components/Profile.js",
-        lineNumber: 8,
+        lineNumber: 29,
         columnNumber: 12
     }, undefined);
 };
@@ -35056,10 +35082,22 @@ class Profile extends (0, _react.Component) {
     constructor(){
         super();
         this.state = {
-            count: 0,
-            count2: 0
+            userInfo: {
+                name: "dummy name ",
+                location: "dummy location"
+            }
         };
     }
+    //   componentDidMount(){
+    //     this.timer= setInterval(()=>{
+    //         console.log("child component set interval")
+    //     },1000)
+    //     console.log("child componentdidmount")
+    //   }
+    //   componentWillUnmount(){
+    //     clearInterval(this.timer)
+    //     console.log("child- componentWillUnmount")
+    //   }
     render() {
         const { count, count2 } = this.state;
         return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
@@ -35071,40 +35109,28 @@ class Profile extends (0, _react.Component) {
                     ]
                 }, void 0, true, {
                     fileName: "src/components/ProfileClass.js",
-                    lineNumber: 18,
-                    columnNumber: 13
+                    lineNumber: 30,
+                    columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
                     children: [
-                        "count:",
-                        count
+                        "name:",
+                        this.state.userInfo.name
                     ]
                 }, void 0, true, {
                     fileName: "src/components/ProfileClass.js",
-                    lineNumber: 19,
-                    columnNumber: 13
+                    lineNumber: 32,
+                    columnNumber: 9
                 }, this),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
                     children: [
-                        "count2:",
-                        count2
+                        "location:",
+                        this.state.userInfo.location
                     ]
                 }, void 0, true, {
                     fileName: "src/components/ProfileClass.js",
-                    lineNumber: 20,
-                    columnNumber: 13
-                }, this),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                    onClick: ()=>{
-                        this.setState({
-                            count2: 1
-                        });
-                    },
-                    children: "setCount2"
-                }, void 0, false, {
-                    fileName: "src/components/ProfileClass.js",
-                    lineNumber: 22,
-                    columnNumber: 13
+                    lineNumber: 33,
+                    columnNumber: 9
                 }, this)
             ]
         }, void 0, true);
