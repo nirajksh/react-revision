@@ -27496,9 +27496,10 @@ const Body = ()=>{
     }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "search",
+                className: "search mx-5",
                 children: [
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                        className: "rounded-md border-black m-1 p-1 w-1/4 text-md bg-slate-200 font-semibold align-middle",
                         type: "text",
                         placeholder: "Search Restaurant",
                         value: searchText,
@@ -27509,6 +27510,7 @@ const Body = ()=>{
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                        className: "p-1 bg-slate-300 rounded-md mx-1",
                         onClick: ()=>{
                             const data = filterData(searchText, restaurantList);
                             setFilterRestaurant(data);
@@ -27516,7 +27518,7 @@ const Body = ()=>{
                         children: "Search"
                     }, void 0, false, {
                         fileName: "src/components/Body.js",
-                        lineNumber: 52,
+                        lineNumber: 53,
                         columnNumber: 9
                     }, undefined)
                 ]
@@ -27526,7 +27528,7 @@ const Body = ()=>{
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "container",
+                className: "flex flex-wrap gap-3 mt-2 m-3",
                 children: filterRestaurant && filterRestaurant.map((res)=>{
                     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
                         to: "/restaurant/" + res.info.id,
@@ -27534,18 +27536,18 @@ const Body = ()=>{
                             ...res.info
                         }, void 0, false, {
                             fileName: "src/components/Body.js",
-                            lineNumber: 65,
+                            lineNumber: 67,
                             columnNumber: 67
                         }, undefined)
                     }, res.info.id, false, {
                         fileName: "src/components/Body.js",
-                        lineNumber: 65,
+                        lineNumber: 67,
                         columnNumber: 12
                     }, undefined);
                 })
             }, void 0, false, {
                 fileName: "src/components/Body.js",
-                lineNumber: 60,
+                lineNumber: 62,
                 columnNumber: 7
             }, undefined)
         ]
@@ -27606,9 +27608,9 @@ var _constantJs = require("../constant.js");
 const RestaurantCard = ({ name, locality, cloudinaryImageId, avgRating })=>{
     //    console.log(name)
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "container",
+        className: "bg",
         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-            className: "card",
+            className: "w-48 border-slate-400 rounded-md bg-slate-200 p-1 shadow-lg",
             children: [
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
                     className: "res_img",
@@ -27622,6 +27624,7 @@ const RestaurantCard = ({ name, locality, cloudinaryImageId, avgRating })=>{
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
                     children: [
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                            className: "font-bold",
                             children: [
                                 name,
                                 " "
@@ -27632,6 +27635,7 @@ const RestaurantCard = ({ name, locality, cloudinaryImageId, avgRating })=>{
                             columnNumber: 13
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                            className: "font-semibold",
                             children: locality
                         }, void 0, false, {
                             fileName: "src/components/RestaurantCard.js",
@@ -27639,6 +27643,7 @@ const RestaurantCard = ({ name, locality, cloudinaryImageId, avgRating })=>{
                             columnNumber: 13
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                            className: "font-semibold",
                             children: [
                                 "Rating",
                                 avgRating
@@ -34735,9 +34740,10 @@ const Header = ()=>{
     _s();
     const [button, setButton] = (0, _react.useState)(true);
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "logo",
+        className: "flex justify-between bg-pink-50 shadow-lg",
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                className: "h-20",
                 alt: "logo",
                 src: logo
             }, void 0, false, {
@@ -34746,17 +34752,19 @@ const Header = ()=>{
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "navItems",
+                className: "",
                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
+                    className: "flex gap-2 font-bold py-8",
                     children: [
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
                             to: "/",
                             children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                className: "px-2",
                                 children: "Home"
                             }, void 0, false, {
                                 fileName: "src/components/Header.js",
-                                lineNumber: 15,
-                                columnNumber: 24
+                                lineNumber: 16,
+                                columnNumber: 13
                             }, undefined)
                         }, void 0, false, {
                             fileName: "src/components/Header.js",
@@ -34766,50 +34774,54 @@ const Header = ()=>{
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
                             to: "/about",
                             children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                className: "px-2",
                                 children: "About"
                             }, void 0, false, {
                                 fileName: "src/components/Header.js",
-                                lineNumber: 17,
-                                columnNumber: 29
-                            }, undefined)
-                        }, void 0, false, {
-                            fileName: "src/components/Header.js",
-                            lineNumber: 17,
-                            columnNumber: 11
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                            children: "Cart"
-                        }, void 0, false, {
-                            fileName: "src/components/Header.js",
-                            lineNumber: 18,
-                            columnNumber: 11
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                            to: "/contact",
-                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                                children: "Contact"
-                            }, void 0, false, {
-                                fileName: "src/components/Header.js",
-                                lineNumber: 19,
-                                columnNumber: 31
+                                lineNumber: 20,
+                                columnNumber: 13
                             }, undefined)
                         }, void 0, false, {
                             fileName: "src/components/Header.js",
                             lineNumber: 19,
                             columnNumber: 11
                         }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                            className: "px-2",
+                            children: "Cart"
+                        }, void 0, false, {
+                            fileName: "src/components/Header.js",
+                            lineNumber: 22,
+                            columnNumber: 11
+                        }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                            to: "/instamart",
+                            to: "/contact",
                             children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                                children: "InstaMart"
+                                className: "px-2",
+                                children: "Contact"
                             }, void 0, false, {
                                 fileName: "src/components/Header.js",
-                                lineNumber: 20,
-                                columnNumber: 33
+                                lineNumber: 24,
+                                columnNumber: 13
                             }, undefined)
                         }, void 0, false, {
                             fileName: "src/components/Header.js",
-                            lineNumber: 20,
+                            lineNumber: 23,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                            to: "/instamart",
+                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                className: "px-2",
+                                children: "InstaMart"
+                            }, void 0, false, {
+                                fileName: "src/components/Header.js",
+                                lineNumber: 27,
+                                columnNumber: 13
+                            }, undefined)
+                        }, void 0, false, {
+                            fileName: "src/components/Header.js",
+                            lineNumber: 26,
                             columnNumber: 11
                         }, undefined)
                     ]
@@ -34824,18 +34836,20 @@ const Header = ()=>{
                 columnNumber: 7
             }, undefined),
             button ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                className: "mr-5 rounded-md p-1 font-semibold bg-slate-300",
                 onClick: ()=>setButton(false),
                 children: "logout"
             }, void 0, false, {
                 fileName: "src/components/Header.js",
-                lineNumber: 24,
+                lineNumber: 32,
                 columnNumber: 9
             }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                className: "mr-5  p-1rounded-md font-semibold bg-slate-300",
                 onClick: ()=>setButton(true),
                 children: "login"
             }, void 0, false, {
                 fileName: "src/components/Header.js",
-                lineNumber: 26,
+                lineNumber: 34,
                 columnNumber: 9
             }, undefined)
         ]
@@ -34870,16 +34884,19 @@ var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 const Footer = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "p-4 bg-pink-50",
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                className: "font-semibold text-lg text-center ",
                 children: "Footer"
             }, void 0, false, {
                 fileName: "src/components/Footer.js",
                 lineNumber: 4,
-                columnNumber: 18
+                columnNumber: 45
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                children: " This is Footer page CopyRights \xa9 2024 Clone "
+                className: " text-center font-semibold ",
+                children: " This is Footer page CopyRights \xa9 2024 Swiggy Clone "
             }, void 0, false, {
                 fileName: "src/components/Footer.js",
                 lineNumber: 5,
