@@ -16,7 +16,9 @@ const Header = () => {
           
           <Link to="/about"><li>About</li></Link>
           <li>Cart</li>
-          <Link to="/contact"><li>Contact</li></Link>        </ul>
+          <Link to="/contact"><li>Contact</li></Link>
+          <Link to="/instamart"><li>InstaMart</li></Link>  
+           </ul>
       </div>
       {button ? (
         <button onClick={() => setButton(false)}>logout</button>

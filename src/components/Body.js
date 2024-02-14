@@ -31,7 +31,7 @@ const Body = () => {
     setRestaurantList(data?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
     setFilterRestaurant(data?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants)
   }
-  console.log(restaurantList)
+  //console.log(restaurantList)
   
 
 
