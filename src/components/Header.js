@@ -1,10 +1,15 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import useOnline from "../utils/useOnline";
 
 const logo = "https://files.yappe.in/place/full/the-food-villa-5873411.webp";
 
 const Header = () => {
   const [button, setButton] = useState(true);
+
+  const isOnline = useOnline()
+
+
 
   return (
     <div className="flex justify-between bg-pink-50 shadow-lg">
@@ -27,7 +32,11 @@ const Header = () => {
             <li className="px-2">InstaMart</li>
           </Link>
         </ul>
+        
+
+
       </div>
+     <h1 data-testid="online-status"> {isOnline ? "✅" :"🔴"  }</h1>
       {button ? (
         <button className="mr-5 rounded-md p-1 font-semibold bg-slate-300" onClick={() => setButton(false)}>logout</button>
       ) : (
