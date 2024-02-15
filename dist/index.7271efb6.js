@@ -35095,7 +35095,7 @@ const RestaurantMenu = ()=>{
     async function getRestaurantInfo() {
         const data = await fetch((0, _constant.Restaurant_Menu_API) + resId);
         const json = await data.json();
-        console.log(json.data);
+        console.log(json.data.cards[2].groupedCard.cardGroupMap.REGULAR.cards[1].card.card.itemCards);
     }
     //console.log(resId)
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
